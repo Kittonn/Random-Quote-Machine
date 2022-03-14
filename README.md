@@ -7,3 +7,4 @@
 * Axios
 * React-Icons
 
+![random-quote](./public/asset/random-quote.png)
