@@ -6,8 +6,13 @@ const QuoteBox = ({ getNewQuote, quote, author }) => {
     <div id="quote-box">
       <div id="text">{quote}</div>
       <div id="author">{author}</div>
-      <div id='bottom'>
-        <a href="" id="tweet-quote">
+      <div id="bottom">
+        <a
+          target="_blank"
+          rel="noopener noreferrer"
+          href={`https://twitter.com/intent/tweet?hashtags=quotes&related=freecodecamp&text=${quote} --${author}`}
+          id="tweet-quote"
+        >
           <FaTwitterSquare id="icon" />
         </a>
         <div onClick={getNewQuote} id="new-quote">

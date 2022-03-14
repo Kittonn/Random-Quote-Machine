@@ -24,10 +24,11 @@ body {
 
 #text {
     font-size: 1.5rem;
-    text-align: left;
+    /* text-align: justify; */
 }
 
 #author {
+    margin-top: 0.75rem;
     font-size: 1rem;
     text-align: right;
 }
@@ -41,6 +42,7 @@ body {
 }
 
 #bottom {
+    margin-top: 1rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -56,4 +58,10 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+@media screen and (max-width:500px) {
+    #quote-box {
+        max-width: 280px;
+    }
 }
