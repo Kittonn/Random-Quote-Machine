@@ -1,6 +1,6 @@
 # Random Quote Machine
 
-> Link :
+> Link : [https://lnwtxn.github.io/Random-Quote-Machine/](https://lnwtxn.github.io/Random-Quote-Machine/)
 
 ### Tools
 * React.Js
