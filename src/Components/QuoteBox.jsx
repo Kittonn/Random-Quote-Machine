@@ -1,7 +1,10 @@
 import React from "react";
-import { FaQuoteLeft, FaQuoteRight, FaTwitterSquare } from "react-icons/fa";
-
-const QuoteBox = ({ getNewQuote, quote, author }) => {
+import { FaTwitterSquare } from "react-icons/fa";
+import { useDispatch, useSelector } from "react-redux";
+import { textActions } from "../store/textSlice";
+const QuoteBox = () => {
+  const { quote, author } = useSelector((state) => state.text.textObj);
+  const dispatch = useDispatch();
   return (
     <div id="quote-box">
       <div id="text">{quote}</div>
@@ -15,7 +18,7 @@ const QuoteBox = ({ getNewQuote, quote, author }) => {
         >
           <FaTwitterSquare id="icon" />
         </a>
-        <div onClick={getNewQuote} id="new-quote">
+        <div onClick={() => dispatch(textActions.newRandom())} id="new-quote">
           New Quote
         </div>
       </div>
